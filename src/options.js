@@ -3,7 +3,6 @@ let height = document.getElementById('height')
 let autoSubmit = document.getElementById('autoSubmit')
 let save = document.getElementById('save')
 
-console.log(autoSubmit);
 chrome.storage.local.get(['width', 'height', 'autoSubmit'], function(result) {
   width.value = result.width;
   height.value = result.height;
