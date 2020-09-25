@@ -1,0 +1,23 @@
+{
+  "name": "1-click dictionary",
+  "version": "1.0",
+  "description": "1-click dictionary is designed to search for a defintion of an English word in one click. The Cambridge dictionary is used for this purpose.",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "background": {
+    "scripts": ["src/background.js"],
+    "persistence": false
+  },
+  "browser_action": {
+    "default_popup": "src/popup.html"
+  },
+  "options_page": "src/options.html",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "manifest_version": 2
+}
